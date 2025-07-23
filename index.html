@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +23,7 @@
 
     <script src="menu.js" defer></script>
 </head>
+
 <body>
     <header>
         <div class="interface">
@@ -32,18 +34,18 @@
             </div><!--logotipo-->
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Conhecimentos</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#topo-do-site">Inicio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#dominios">Conhecimentos</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                 </ul>
             </nav>
 
             <div class="btn-contato">
-                <a href="#">
+                <a href="#rodape-do-site">
                     <button>Contato</button>
                 </a>
-            </div><!--btn-contato-->
+            </div>
 
             <div class="btn-abrir-menu" id="btn-menu">
                 <i class="bi bi-list"></i>
@@ -54,15 +56,14 @@
                     <i class="bi bi-x-lg"></i>
                 </div><!--btn-fechar-->
 
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Conhecimentos</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
+                <nav>
+                    <ul>
+                        <li><a href="#topo-do-site">Inicio</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#dominios">Conhecimentos</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                    </ul>
+                </nav>
             </div><!--menu-mobile-->
 
             <div class="overlay-menu" id="overlay-menu"></div><!--overlay-menu-->
@@ -71,60 +72,84 @@
     </header>
 
     <main>
-        <section class="topo-do-site">
+        <section id="topo-do-site " class="topo-do-site">
             <div class="interface">
-                    <div class="flex">
-                        <div class="txt-topo-site">
-                            <h1>QUEM É O LUIGI<span>?</span></h1>
-                            <p>Olá a todos! Sou um desenvolvedor em formação, apaixonado por tecnologia e sempre 
-                            em busca de aprendizado. Tenho muita vontade de aprimorar meus conhecimentos, enfrentar 
-                            novos desafios e evoluir cada vez mais na área de desenvolvimento.</p>
-                            
-                            <div class="btn-contato">
-                                    <a href="#">
-                                        <button>Entre em contato</button>
-                                    </a>
-                                </div>
-                            </div><!--txt-topo-site-->
-                        
-                        <div class="img-topo-site">
-                                <img src="images/icone perfil 2.png" alt="img-perfil" height="400px" width="400px">
-                        
-                        </div><!--img-topo-site-->
-                    
-                    </div><!--flex-->
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>BEM VINDO AO MEU <span>PORTFÓLIO!</span></h1>
+                        <p>Sou um estudante de desenvolvimento focado em Java e tecnologias web.</p>
+                        <p>Aqui você encontrará meus projetos, conhecimentos e trajetória no mundo da programação.</p>
+
+                    </div><!--txt-topo-site-->
+
+                    <!-- 
+                    <div class="img-topo-site">
+                        <img src="images/icone perfil 2.png" alt="img-perfil" height="400px" width="400px">
+
+                    </div> -->
+
+
+                </div><!--flex-->
             </div><!--interface-->
         </section><!--topo-do-site-->
-        
-        <section class="dominios">
+
+        <section id="sobre" class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/foto sobre.jpeg" alt="imagem-sobre" height="470px" width="420px">
+                    </div><!--img-sobre-->
+
+                    <div class="txt-sobre">
+                        <h2>QUEM É O <span>LUIGI?</span></h2>
+                        <p>Prazer, me chamo Luigi! Sou uma pessoa muito tranquila, alegre, curiosa e apaixonada por
+                            tecnologia. Atualmente estou em processo de desenvolvimento como programador FULL STACK,
+                            buscando evoluir constantemente e me aprimorar a cada dia.</p>
+
+                        <p>Tenho muito interesse em entender como as coisa funcionam por trás dos sistemas e
+                            constantemente me desafio a fazer novos projetos, buscando aprender novas tecnologias.
+                            Estou sempre disposto a colaborar com todos, trocar experiências e crescer juntos com meus
+                            amigos e a comunidade de tecnologia. A cada projeto, busco não somente melhorar minhas
+                            habilidades técnicas, mas também desenvolver meu lado criativo e minha capacidade de
+                            resolver
+                            os problemas.</p>
+                    </div><!--txt-sobre-->
+
+                </div>
+            </div><!--interface-->
+        </section><!--sobre-->
+
+        <section id="dominios" class="dominios">
             <div class="interface">
                 <br>
                 <h2 class="titulo">MEUS <span>CONHECIMENTOS</span></h2>
                 <div class="flex">
-                    <div class="dominios-box">             
-                       <i class="devicon-java-plain colored"></i>
-                       <br><br>
-                       <h3>JAVA</h3>
-                       <p>Atualmente, estou me aprofundando no desenvolvimento em Java, focando na criação de sistemas, 
-                        aplicações e no entendimento de conceitos como Programação Orientada a Objetos e boas práticas 
-                        de desenvolvimento, com base nas aulas que estou tendo atualmente sobre esse assunto.</p>
+                    <div class="dominios-box">
+                        <i class="devicon-java-plain colored"></i>
+                        <br><br>
+                        <h3>JAVA</h3>
+                        <p>Atualmente, estou me aprofundando no desenvolvimento em Java, focando na criação de sistemas,
+                            aplicações e no entendimento de conceitos como Programação Orientada a Objetos e boas
+                            práticas
+                            de desenvolvimento, com base nas aulas que estou tendo atualmente sobre esse assunto.</p>
 
                     </div><!--dominios-box-->
-                    <div class="dominios-box">          
-                        <i class="devicon-html5-plain colored"></i>          
+                    <div class="dominios-box">
+                        <i class="devicon-html5-plain colored"></i>
                         <br><br>
                         <h3>HTML 5</h3>
-                        <p>Possuo conhecimentos básicos em HTML5, utilizado por exemplo neste portfólio, também gosto 
-                            de utilizar na construção de páginas web nos projetos da faculdade. Ultimamente tenho 
+                        <p>Possuo conhecimentos básicos em HTML5, utilizado por exemplo neste portfólio, também gosto
+                            de utilizar na construção de páginas web nos projetos da faculdade. Ultimamente tenho
                             praticado esta criação de interfaces e projetos front-end simples.</p>
 
                     </div><!--dominios-box-->
-                    <div class="dominios-box">                        
-                        <i class="devicon-cplusplus-plain colored"></i>          
+                    <div class="dominios-box">
+                        <i class="devicon-cplusplus-plain colored"></i>
                         <br><br>
                         <h3>C++</h3>
-                        <p>Tenho noções básicas de desenvolvimento em C++, linguagem que me ajuda a entender os conceitos 
-                            fundamentais de lógica de programação, algoritmos e estrutura de dados. Desde de 2023 desde 
+                        <p>Tenho noções básicas de desenvolvimento em C++, linguagem que me ajuda a entender os
+                            conceitos
+                            fundamentais de lógica de programação, algoritmos e estrutura de dados. Desde de 2023 desde
                             noção lógica com este tipo de linguagem.</p>
 
                     </div><!--dominios-box-->
@@ -132,63 +157,28 @@
             </div><!--interface-->
         </section><!--dominios-->
 
-        <section class="sobre">
+        <section id="projetos" class="projetos">
             <div class="interface">
+                <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
                 <div class="flex">
-                    <div class="img-sobre">
-                        <img src="images/foto sobre.png" alt="imagem-sobre" height="450px" width="400px">
-                    </div><!--img-sobre-->
-                    
-                    <div class="txt-sobre">
-                        <h2>PRAZER, <span>ME CHAMO LUIGI.</span></h2>
-                        <p>Prazer, me chamo Luigi! Sou uma pessoa muito tranquila, alegre, curiosa e apaixonada por 
-                        tecnologia. Atualmente estou em processo de desenvolvimento como programador FULL STACK, 
-                        buscando evoluir constantemente e me aprimorar a cada dia.</p>
 
-                        <p>Tenho muito interesse em entender como as coisa funcionam por trás dos sistemas e 
-                        constantemente me desafio a fazer novos projetos, buscando aprender novas tecnologias. 
-                        Estou sempre disposto a colaborar com todos, trocar experiências e crescer juntos com meus 
-                        amigos e a comunidade de tecnologia. A cada projeto, busco não somente melhorar minhas 
-                        habilidades técnicas, mas também desenvolver meu lado criativo e minha capacidade de resolver 
-                        os problemas.</p>
+                    <div class="img-proj" style="background-image: url(images/projeto1.png);">
+                        <!-- exemplo tamanho da imagem 1920x6137 -->
+                        <div class="overlay">EcoViva</div>
+                    </div>
 
-                        <div class="btn-social">
-                            <a href="https://www.instagram.com/luigi.biagioo">
-                                <button><i class="bi bi-instagram"></i></button></a>
-                            
-                            <a href="https://github.com/Luigi-Antonioli">
-                                <button><i class="bi bi-github"></i></button></a>
-                            
-                            <a href="https://www.linkedin.com/in/luigibiagio">
-                                <button><i class="bi bi-linkedin"></i></button></a>
+                    <div class="img-proj" style="background-image: url()">
+                        <div class="overlay">EM DESENVOLVIMENTO</div>
+                    </div>
 
-                        </div><!--btn-social-->
-                    </div><!--txt-sobre-->
-
-                </div>
-            </div><!--interface--> 
-        </section><!--sobre-->    
-
-        <section class="projetos">
-                <div class="interface">
-                    <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
-                    <div class="flex">
-
-                        <div class="img-proj" style="background-image: url()"> <!-- exemplo tamanho da imagem 1920x6137 -->
-                            <div class="overlay">Projeto 1</div>
-                        </div>
-
-                        <div class="img-proj" style="background-image: url()">
-                            <div class="overlay">Projeto 2</div>
-                        </div>
-
-                        <div class="img-proj" style="background-image: url()">
-                            <div class="overlay">Projeto 3</div>
-                        </div>
-                    </div><!--flex-->
-                </div><!--interface-->
+                    <div class="img-proj" style="background-image: url()">
+                        <div class="overlay">EM DESENVOLVIMENTO</div>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
         </section><!--projetos-->
 
+        <!-- fazer o formulario funcional futuramente
         <section class="formulario">
             <div class="interface">
                 <h2 class="titulo">FALE <span>COMIGO.</span></h2>
@@ -200,34 +190,36 @@
                     <textarea name="" id="" placeholder="Digite sua mensagem" required></textarea>
 
                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-                </form><!--form-->
-            </div><!--interface-->
-        </section><!--formulario-->
+                </form>
+            </div>
+        </section>
+         -->
+
     </main>
 
-    <footer>
+    <footer id="rodape-do-site">
         <div class="interface">
             <div class="line-footer">
                 <div class="flex">
                     <div class="logo-footer">
                         <img src="images/logo_cortada.png" alt="Logo do portfolio" height="100px" width="140px">
                     </div><!--logo-footer-->
-                    
+
                     <div class="btn-social">
-                        <a href="https://www.instagram.com/luigi.biagioo">
-                        <button><i class="bi bi-instagram"></i></button></a>
-                                        
-                        <a href="https://github.com/Luigi-Antonioli">
-                        <button><i class="bi bi-github"></i></button></a>
-                                        
-                        <a href="https://www.linkedin.com/in/luigibiagio">
-                        <button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://www.instagram.com/luigi.biagioo" title="Instagram">
+                            <button><i class="bi bi-instagram"></i></button></a>
+
+                        <a href="https://github.com/Luigi-Antonioli" title="GitHub">
+                            <button><i class="bi bi-github"></i></button></a>
+
+                        <a href="https://www.linkedin.com/in/luigibiagio" title="Linkedin">
+                            <button><i class="bi bi-linkedin"></i></button></a>
                     </div><!--btn-social-->
                 </div><!--flex-->
             </div><!--line-footer-->
-            
+
             <div class="line-footer borda">
-                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:luigibiagantonioli@gmail.com"> luigibiagantonioli@gmail.com</a></p>
+                <p><i class="bi bi-envelope-fill"></i> luigibiagantonioli@gmail.com</a></p>
                 <p>© 2025 Luigi Antonioli - Todos os direitos reservados</p>
             </div><!--line-footer-->
         </div><!--interface-->
